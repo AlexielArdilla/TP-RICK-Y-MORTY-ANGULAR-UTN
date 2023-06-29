@@ -1,0 +1,30 @@
+<h1>Login</h1>
+<div class="container">
+  <div class="caja">
+    <form [formGroup]="myLogin" (ngSubmit)="loguearse()">
+      <div>
+        <label>Email</label><br>
+        <input type="email" formControlName="email" required="required" email="true"/>
+      </div>
+      <div *ngIf="myLogin.get('email')?.errors && myLogin.get('email')?.dirty">
+        El campo es obligatorio
+    </div>
+      <div>
+        <label>Contraseña</label><br>
+        <input type="password" formControlName="password" required="required" />
+      </div>
+      <div *ngIf="myLogin.get('password')?.errors && myLogin.get('password')?.dirty">
+        <p *ngIf="myLogin.get('password')?.hasError('required')">
+          El campo es obligatorio
+        </p>
+        <p *ngIf="myLogin.get('password')?.hasError('minlength')">
+          Debe tener 6 o más caracteres
+        </p>
+        <p *ngIf="myLogin.get('password')?.hasError('maxlength')">
+          Debe tener hasta 10 caracteres
+        </p>
+      </div><br>
+      <button type="submit" [disabled]="myLogin.invalid">Loguearme</button>
+    </form>
+  </div>
+</div>

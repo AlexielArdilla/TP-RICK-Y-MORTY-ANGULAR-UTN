@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caja {
+  text-align: center;
+  border: 2px solid black;
+  display: inline-block;
+  padding: 25px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+}
+
+input {
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  border-radius: 50px;
+  width: 200px;
+  height: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+button {
+  background-color: yellow;
+  font-weight: bold;
+  color: black;
+  border-radius: 50px;
+  width: 120px;
+  height: 30px;
+}
+
+button:hover {
+  background-color: rgb(159, 228, 32);
+  color: black;
+  border-radius: 50px;
+
+}
