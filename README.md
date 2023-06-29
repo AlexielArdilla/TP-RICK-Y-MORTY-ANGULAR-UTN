@@ -1,4 +1,4 @@
-# MercadilloLibre
+# Rick & Morty APP ANGULAR para UTN consulta la API
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
 
